@@ -1,10 +1,11 @@
 $("Document").ready(function() {
 
+
   $(".btn-default").on("click", function() {
 
 
 var stateSearch, searchButton, nj, acceptNJ, acceptNY, acceptPA, pa
-
+// dictionary
 acceptNJ = {
     "nj" : true,
     "new jersey" : true
