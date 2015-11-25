@@ -3,30 +3,38 @@ $("Document").ready(function() {
   $(".btn-default").on("click", function() {
 
 
-var state1, searchButton, nj, pa
+var stateSearch, searchButton, nj, pa
 nj = "nj", "NJ";
 ny = "ny";
 pa = "pa";
-state1 = $("#state1").val();
+stateSearch = $("#stateSearch").val();
 
 
-if (state1 === nj) {
+if (stateSearch === nj) {
     $(".nj").fadeIn(2000);
-    $(".pa").fadeOut(2000);
-    $(".ny").fadeOut(2000);
+    $(".pa").fadeOut(500);
+    $(".ny").fadeOut(500);
      return;
 }
 
-if (state1 === ny) {
+if (stateSearch === ny) {
   $(".ny").fadeIn(2000);
+  $(".pa").fadeOut(500);
+  $(".nj").fadeOut(500);
 
   return;
+}
 
+if (stateSearch === pa) {
+  $(".pa").fadeIn(2000);
+  $(".ny").fadeOut(500);
+  $(".nj").fadeOut(500);
 
+  return;
 }
 
 else {
-  prompt("please enter something");
+  prompt("please enter a valid tri-state!");
 }
 
 
