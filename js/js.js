@@ -31,14 +31,6 @@ if (stateSearch === domtest) {
 
 $(".target").prepend("<div>").addClass("panel panel-warning nj 5star").prepend("<div class='panel panel-body'>nj one star </div></div></div>");
 $(".target").prepend("<div class='panel panel-warning'> <div class='panel panel-body'>c'mon </div></div>");
-// var panel, panelbody, hey
-
-// panel = $("<div>").addClass("panel panel-default ny ny5star");
-// panelbody = $("<div>").addClass("panel-body");
-// hey = "hey"
-
-//  $("body").append(panel).append(panelbody).append(hey);
-// return;
 
 };
 
@@ -51,53 +43,6 @@ $(".target").prepend("<div class='panel panel-warning njpanel 3star'> <div class
 $(".target").prepend("<div class='panel panel-warning njpanel 2star'> <div class='panel panel-body'>2 star nj</div></div>");
 $(".target").prepend("<div class='panel panel-warning njpanel 1star'> <div class='panel panel-body'>1 star nj</div></div>");
 
-
-
-
-  //   $(".nj").fadeIn(2000);
-  //   $(".pa").fadeOut(500);
-  //   $(".ny").fadeOut(500);
-    
-  // $(".star1").on("click", function() {
-  //   $(".nj5star").show();
-  //   $(".nj4star").show();
-  //   $(".nj3star").show();
-  //   $(".nj2star").show();
-  //   $(".nj1star").show();
-    
-  // });
-  // $(".star2").on("click", function() {
-  //   $(".nj5star").show();
-  //   $(".nj4star").show();
-  //   $(".nj3star").show();
-  //   $(".nj2star").show();
-  //   $(".nj1star").hide();
-    
-  // });
-  // $(".star3").on("click", function() {
-  //   $(".nj5star").show();
-  //   $(".nj4star").show();
-  //   $(".nj3star").show();
-  //   $(".nj2star").hide();
-  //   $(".nj1star").hide();
-   
-
-  // });
-  // $(".star4").on("click", function() {
-  //   $(".nj5star").show();
-  //   $(".nj4star").show();
-  //   $(".nj3star").hide();
-  //   $(".nj2star").hide();
-  //   $(".nj1star").hide();
-    
-  // });
-  // $(".star5").on("click", function() {
-  //   $(".nj5star").show();
-  //   $(".nj4star").hide();
-  //   $(".nj3star").hide();
-  //   $(".nj2star").hide();
-  //   $(".nj1star").hide();
-  // });
      return;
 }
 
