@@ -4,18 +4,88 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="styles/styles.css">
 
-  <title></title>
+  <title>Hotels</title>
 </head>
 <body>
+<div class="navbar">
+      <div class="container">
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">Logo Goes Here</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" role="button">Dropdown<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li><input type="text" class="form-control" id="stateSearch" placeholder="nj ny or pa"></li>
+                <li><button class="btn btn-default searchButton" type="button">Find a Location</button></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+      <!-- First Slide -->
+        <div class="item active">
+          <img class="first-slide" src="https://mediastream.jumeirah.com/webimage/heroactual//globalassets/global/hotels-and-resorts/dubai/burj-al-arab/carousel/burj-al-arab-exterior1-hero.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Choose The Best Hotels</h1>
+              <p><a class="btn btn-lg btn-primary" id="modal" role="button">Pick A Date</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- Second Slide -->
+        <div class="item">
+          <img class="second-slide" src="https://wallpaperscraft.com/image/dubai_uae_jumeirah_beach_hotel_58906_1920x1080.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>From All Over The World</h1>
+              <p><a class="btn btn-lg btn-primary" id="modal" role="button">Pick A Date</a></p>
+            </div>
+          </div>
+        </div>
+        <!-- Third Slide -->
+        <div class="item">
+          <img class="third-slide" src="https://wallpaperscraft.com/image/las_vegas_night_hotel_casino_architecture_58117_1920x1080.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>With The Click Of A Button</h1>
+              <p><a class="btn btn-lg btn-primary" id="modal" role="button">Pick A Date</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Left Arrow -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <!-- Right Arrow -->
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div><!-- /.carousel -->
   <div class="container-fluid">
     <div class="row-fluid">
       <div class="col-md-4">
-       <div class="input-group">
-          <input type="text" class="form-control" id="stateSearch" placeholder="nj ny or pa">
-            <span class="input-group-btn">
-              <button class="btn btn-default searchButton" type="button">Find a State</button>
-            </span> 
-        </div>
         <div class="btn-group" data-toggle="buttons">
   <label class="btn btn-alert active star1">
     <input type="radio" name="options" id="1star" autocomplete="off" checked> Radio 1 (preselected)
@@ -121,9 +191,12 @@
     </div> <!-- row fluid -->
   </div> <!-- container fluid -->
 
-
+<script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script> 
+<script src="js/picker.js" type="text/javascript"></script> 
+<script src="js/picker.date.js" type="text/javascript"></script> 
+<script src="js/picker.time.js" type="text/javascript"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jq.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" rossorigin="anonymous"></script>
 <script type="text/javascript" src="js/js.js"></script>
 <script type="text/javascript" src="js/stars.js"></script>
 </body>
