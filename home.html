@@ -8,32 +8,25 @@
 </head>
 <body>
 <div class="navbar">
-      <div class="container">
-        <nav class="navbar navbar-inverse navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">Logo Goes Here</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" role="button">Dropdown<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                  </ul>
-                </li>
-                <li><input type="text" class="form-control" id="stateSearch" placeholder="nj ny or pa"></li>
-                <li><button class="btn btn-default searchButton" type="button">Find a Location</button></li>
-                <button class="button resetSearch"> reset</button>
-              </ul>
-            </div>
-          </div>
-        </nav>
+  <div class="container">
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="col-md-3">
+        <input type="text" class="form-control" id="startDate" placeholder="Start Date">
       </div>
-    </div>
-
+      <div class="col-md-3">
+        <input type="text" class="form-control" id="endDate" placeholder="End Date">
+      </div>
+      <div class="col-md-3">
+        <input type="text" class="form-control" id="stateSearch" placeholder="nj ny or pa">
+        <button class="btn btn-default searchButton" type="button">Find a Hotel
+        </button>
+      </div>
+        <button class="button resetSearch"> reset
+        </button>
+    </nav>
+  </div>
+</div>
+      
 
     <!-- Carousel -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
