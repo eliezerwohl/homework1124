@@ -37,11 +37,11 @@ $(".target").prepend("<div class='panel panel-warning'> <div class='panel panel-
 if (acceptNJ[stateSearch.toLowerCase()]) {
   $(".papanel").remove();
   $(".nypanel").remove();
-$(".target").prepend("<div class='panel panel-warning njpanel 5star'> <div class='panel panel-body'>5 star nj</div></div>");
-$(".target").prepend("<div class='panel panel-warning njpanel 4star'> <div class='panel panel-body'>4 star nj</div></div>");
-$(".target").prepend("<div class='panel panel-warning njpanel 3star'> <div class='panel panel-body'>3 star nj</div></div>");
-$(".target").prepend("<div class='panel panel-warning njpanel 2star'> <div class='panel panel-body'>2 star nj</div></div>");
-$(".target").prepend("<div class='panel panel-warning njpanel 1star'> <div class='panel panel-body'>1 star nj</div></div>");
+$(".target").prepend("<div class='panel panel-warning njpanel 5star hbo'> <div class='panel panel-body'>5 star nj wifi hbo</div></div>");
+$(".target").prepend("<div class='panel panel-warning njpanel 4star hbo'> <div class='panel panel-body'>4 star nj hbo</div></div>");
+$(".target").prepend("<div class='panel panel-warning njpanel 3star wifi'> <div class='panel panel-body'>3 star nj wifi</div></div>");
+$(".target").prepend("<div class='panel panel-warning njpanel 2star hbo'> <div class='panel panel-body'>2 star nj hbo</div></div>");
+$(".target").prepend("<div class='panel panel-warning njpanel 1star nothing'> <div class='panel panel-body'>1 star nj</div></div>");
 
      return;
 }
