@@ -2,7 +2,7 @@
   
 
   $(".startSearch").on("click", function() {
-  $(".body-invisible").show();
+  $(".fakeInvisible").show();
   $("#myCarousel").hide();
 
 
