@@ -1,10 +1,7 @@
 $("Document").ready(function() {
-
   $(".resetSearch").hide();
-
-    $(".btn-default").on("click", function() {   
- 
-    var stateSearch, searchButton, nj, acceptNJ, acceptNY, acceptPA, pa, domtest, endEmpty
+  $(".btn-default").on("click", function() {   
+    var stateSearch, searchButton, nj, acceptNJ, acceptNY, acceptPA, pa, endEmpty, startEmpty, stateEmpty
     // dictionary
     acceptNJ = {
         "nj" : true,
@@ -21,94 +18,67 @@ $("Document").ready(function() {
         "pennsylvania" : true
     };
 
-    domtest= "domtest"
     nj = "nj";
     ny = "ny";
     pa = "pa";
     stateSearch = $("#stateSearch").val();
-    var endEmpty, startEmpty, stateEmpty
-   stateSearch = $("#stateSearch").val();
-      endEmpty= $("#endDate").val();
-      startEmpty= $("#startDate").val();
+    stateSearch = $("#stateSearch").val();
+    endEmpty= $("#endDate").val();
+    startEmpty= $("#startDate").val();
 
-       if (endEmpty.length === 0) {
+    if (endEmpty.length === 0) {
       prompt("needs ending");
-      return;
-     
-    };
-
-       if (startEmpty.length === 0) {
-      prompt("needs start");
-      return;
-    };
-
-
-       if (stateSearch.length === 0) {
-      prompt("enter in a state");
-    return;
-    };
-
-  
-    
-    if (stateSearch === domtest) {
-
-    $(".target").prepend("<div>").addClass("panel panel-warning nj 5star").prepend("<div class='panel panel-body'>nj one star </div></div></div>");
-    $(".target").prepend("<div class='panel panel-warning'> <div class='panel panel-body'>c'mon </div></div>");
-
-    };
-
-    if (acceptNJ[stateSearch.toLowerCase()]) {
-      $(".papanel").remove();
-      $(".nypanel").remove();
-    $(".target").prepend("<div class='panel panel-warning njpanel 5star hbo 5dollar'> <div class='panel panel-body'>457 dollar star nj hbo</div></div>");
-    $(".target").prepend("<div class='panel panel-warning njpanel 4star hbo 4dollar'> <div class='panel panel-body'>356 dollar 4 star nj hbo</div></div>");
-    $(".target").prepend("<div class='panel panel-warning njpanel 3star wifi 4dollar'> <div class='panel panel-body'>236 dollar 3 star nj wifi</div></div>");
-    $(".target").prepend("<div class='panel panel-warning njpanel 2star hbo 2dollar'> <div class='panel panel-body'>149 dollar 2 star nj hbo</div></div>");
-    $(".target").prepend("<div class='panel panel-warning njpanel 1star nothing 2dollar'> <div class='panel panel-body'>101 dollar1 star nj</div></div>");
- $('.btn-default').hide();
-    $(".resetSearch").show();
-         return;
-    }
-
-    if (acceptNY[stateSearch.toLowerCase()]) {
-      $(".njpanel").remove();
-      $(".papanel").remove();
-     $(".target").prepend("<div class='panel panel-warning nypanel 5star 5dollar hbo'> <div class='panel panel-body'>499 5 star ny hbo</div></div>");
-    $(".target").prepend("<div class='panel panel-warning nypanel 4star 5dollar wifi'> <div class='panel panel-body'>423 dollar 4 star ny wifi</div></div>");
-    $(".target").prepend("<div class='panel panel-warning nypanel 3star 4dollar hbo'> <div class='panel panel-body'>345 dollar 3 star ny hbo</div></div>");
-    $(".target").prepend("<div class='panel panel-warning nypanel 2star 4dollar wifi'> <div class='panel panel-body'> 322 dollar 2 star ny wifi</div></div>");
-    $(".target").prepend("<div class='panel panel-warning nypanel 1star 3dollar hbo'> <div class='panel panel-body '> 246 dollar 1 star ny hbo</div></div>");
-      $('.btn-default').hide();
-    $(".resetSearch").show();
-     return; 
+      return;     
       };
 
-
-
-
-
-
-
-
+    if (startEmpty.length === 0) {
+        prompt("needs start");
+        return;
+      };
+    if (stateSearch.length === 0) {
+        prompt("enter in a state");
+        return;
+      };
+  
+    if (acceptNJ[stateSearch.toLowerCase()]) {
+        $(".papanel").remove();
+        $(".nypanel").remove();
+        $(".target").prepend("<div class='panel panel-warning njpanel 5star hbo 5dollar'> <div class='panel panel-body'>457 dollar star nj hbo</div></div>");
+        $(".target").prepend("<div class='panel panel-warning njpanel 4star hbo 4dollar'> <div class='panel panel-body'>356 dollar 4 star nj hbo</div></div>");
+        $(".target").prepend("<div class='panel panel-warning njpanel 3star wifi 4dollar'> <div class='panel panel-body'>236 dollar 3 star nj wifi</div></div>");
+        $(".target").prepend("<div class='panel panel-warning njpanel 2star hbo 2dollar'> <div class='panel panel-body'>149 dollar 2 star nj hbo</div></div>");
+        $(".target").prepend("<div class='panel panel-warning njpanel 1star nothing 2dollar'> <div class='panel panel-body'>101 dollar1 star nj</div></div>");
+        $('.btn-default').hide();
+        $(".resetSearch").show();
+        return;
+      };
+    if (acceptNY[stateSearch.toLowerCase()]) {
+        $(".njpanel").remove();
+        $(".papanel").remove();
+        $(".target").prepend("<div class='panel panel-warning nypanel 5star 5dollar hbo'> <div class='panel panel-body'>499 5 star ny hbo</div></div>");
+        $(".target").prepend("<div class='panel panel-warning nypanel 4star 5dollar wifi'> <div class='panel panel-body'>423 dollar 4 star ny wifi</div></div>");
+        $(".target").prepend("<div class='panel panel-warning nypanel 3star 4dollar hbo'> <div class='panel panel-body'>345 dollar 3 star ny hbo</div></div>");
+        $(".target").prepend("<div class='panel panel-warning nypanel 2star 4dollar wifi'> <div class='panel panel-body'> 322 dollar 2 star ny wifi</div></div>");
+        $(".target").prepend("<div class='panel panel-warning nypanel 1star 3dollar hbo'> <div class='panel panel-body '> 246 dollar 1 star ny hbo</div></div>");
+        $('.btn-default').hide();
+        $(".resetSearch").show();
+        return; 
+      };
     if (acceptPA[stateSearch.toLowerCase()]) {
-      $(".njpanel").remove();
-      $(".nypanel").remove();
-     $(".target").prepend("<div class='panel panel-warning papanel 5star wifi'> <div class='panel panel-body 4dollar'>395 dollar 5 star pa wifi</div></div>");
-    $(".target").prepend("<div class='panel panel-warning papanel 4star wifi'> <div class='panel panel-body 4dollar'>350 dollar 4 star pa wifi</div></div>");
-    $(".target").prepend("<div class='panel panel-warning papanel 3star hbo'> <div class='panel panel-body 3dollar'>245 dollar 3 star pa hbo</div></div>");
-    $(".target").prepend("<div class='panel panel-warning papanel 2star wifi'> <div class='panel panel-body 2dollar'>197 dollar 2 star pa wifi</div></div>");
-    $(".target").prepend("<div class='panel panel-warning papanel 1star wifi'> <div class='panel panel-body 2dollar'>130 dollar 1 star pa wifi</div></div>");
- $('.btn-default').hide();
-    $(".resetSearch").show();
-      return;
-    }
+        $(".njpanel").remove();
+        $(".nypanel").remove();
+        $(".target").prepend("<div class='panel panel-warning papanel 5star wifi'> <div class='panel panel-body 4dollar'>395 dollar 5 star pa wifi</div></div>");
+        $(".target").prepend("<div class='panel panel-warning papanel 4star wifi'> <div class='panel panel-body 4dollar'>350 dollar 4 star pa wifi</div></div>");
+        $(".target").prepend("<div class='panel panel-warning papanel 3star hbo'> <div class='panel panel-body 3dollar'>245 dollar 3 star pa hbo</div></div>");
+        $(".target").prepend("<div class='panel panel-warning papanel 2star wifi'> <div class='panel panel-body 2dollar'>197 dollar 2 star pa wifi</div></div>");
+        $(".target").prepend("<div class='panel panel-warning papanel 1star wifi'> <div class='panel panel-body 2dollar'>130 dollar 1 star pa wifi</div></div>");
+        $('.btn-default').hide();
+        $(".resetSearch").show();
+        return;
+        }
 
-    else {
-      prompt("please enter a valid tri-state!");
-    }
-
-
-    });
-
-
+      else {
+        prompt("please enter a valid tri-state!");
+          }
+  });
 });
