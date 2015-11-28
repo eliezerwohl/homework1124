@@ -1,6 +1,7 @@
 $(document).ready(function(){
-  $('input').click(function(){
-    $('input').pickadate();
+  $("input").click(function(){
+    $("#startDate").pickadate();
+    $("#endDate").pickadate();
   });
 });
 
