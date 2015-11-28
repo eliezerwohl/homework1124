@@ -1,7 +1,6 @@
 
 $("Document").ready(function() {
-
-$(".1input").on("click", function() {
+  $(".1input").on("click", function() {
     $(".5star").show();
     $(".4star").show();
     $(".3star").show();
@@ -23,8 +22,7 @@ $(".1input").on("click", function() {
     $(".3star").show();
     $(".2star").hide();
     $(".1star").hide();
-   return;
-
+    return;
   });
   $(".4input").on("click", function() {
     $(".5star").show();
@@ -40,10 +38,9 @@ $(".1input").on("click", function() {
     $(".3star").hide();
     $(".2star").hide();
     $(".1star").hide();
-return;
-
+    return;
   });
 
- });
+});
 
 
