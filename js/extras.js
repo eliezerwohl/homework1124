@@ -4,12 +4,14 @@ $("Document").ready(function() {
     alert("nobody accept bitcoin");
   });
   $(".hboselect").on("click", function() {
+    $(".hbo:visible").show();
     $(".wifi").hide();
     $(".nothing").hide();
     return;
   });
   $(".wifiselect").on("click", function() {
     $(".hbo").hide();
+    $(".wifi:visible").show();
     $(".nothing").hide();
     return;
   });
