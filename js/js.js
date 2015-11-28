@@ -1,6 +1,6 @@
 $("Document").ready(function() {
   $(".resetSearch").hide();
-  $(".btn-default").on("click", function() {   
+  $(".searchButton").on("click", function() {   
     var stateSearch, searchButton, nj, acceptNJ, acceptNY, acceptPA, pa, endEmpty, startEmpty, stateEmpty
     // dictionary
     acceptNJ = {
@@ -48,7 +48,7 @@ $("Document").ready(function() {
         $(".target").prepend("<div class='panel panel-info njpanel 3star wifi 4dollar'> <div class='panel panel-body'>236 dollar 3 star nj wifi</div></div>");
         $(".target").prepend("<div class='panel panel-info njpanel 2star hbo 2dollar'> <div class='panel panel-body'>149 dollar 2 star nj hbo</div></div>");
         $(".target").prepend("<div class='panel panel-info njpanel 1star nothing 2dollar'> <div class='panel panel-body'>101 dollar1 star nj</div></div>");
-        $('.btn-default').hide();
+        $('.searchButton').hide();
         $(".resetSearch").show();
         return;
       };
@@ -60,7 +60,7 @@ $("Document").ready(function() {
         $(".target").prepend("<div class='panel panel-info nypanel 3star 4dollar hbo'> <div class='panel panel-body'>345 dollar 3 star ny hbo</div></div>");
         $(".target").prepend("<div class='panel panel-info nypanel 2star 4dollar wifi'> <div class='panel panel-body'> 322 dollar 2 star ny wifi</div></div>");
         $(".target").prepend("<div class='panel panel-info nypanel 1star 3dollar hbo'> <div class='panel panel-body '> 246 dollar 1 star ny hbo</div></div>");
-        $('.btn-default').hide();
+        $('.searchButton').hide();
         $(".resetSearch").show();
         return; 
       };
@@ -72,7 +72,7 @@ $("Document").ready(function() {
         $(".target").prepend("<div class='panel panel-info papanel 3star hbo'> <div class='panel panel-body 3dollar'>245 dollar 3 star pa hbo</div></div>");
         $(".target").prepend("<div class='panel panel-info papanel 2star wifi'> <div class='panel panel-body 2dollar'>197 dollar 2 star pa wifi</div></div>");
         $(".target").prepend("<div class='panel panel-info papanel 1star wifi'> <div class='panel panel-body 2dollar'>130 dollar 1 star pa wifi</div></div>");
-        $('.btn-default').hide();
+        $('.searchButton').hide();
         $(".resetSearch").show();
         return;
         }
