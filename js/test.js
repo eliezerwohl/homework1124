@@ -5,7 +5,7 @@ $("document").ready(function(){
     $(".startSearch").hide();
     $("#myCarousel").animate({
       height:'350px'})
-    .slideUp(9000000);
+    .slideUp(90000000);
     });
   });
   //start pickadate
