@@ -7,6 +7,8 @@
   padding-bottom: 
 }*/
 
+.notValid, #bitcoin, .validTri {display:none;}
+
 .carousel .item {
   height: 500px;
   background-color: #777;

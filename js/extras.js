@@ -1,7 +1,9 @@
 $("Document").ready(function() {
 
   $(".bitcoin").on("click", function(){
-    alert("nobody accept bitcoin");
+    $("#bitcoin").show();
+    $(".hbo, .wifi, .nothing").hide();
+    return;
   });
   $(".hboselect").on("click", function() {
     $(".hbo:visible").show();
@@ -19,6 +21,7 @@ $("Document").ready(function() {
     $(".hbo").show();
     $(".nothing").show();
     $(".wifi").show();
+    $("#bitcoin").hide();
     return;
   });
 });
