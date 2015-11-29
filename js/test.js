@@ -8,12 +8,8 @@ $("document").ready(function(){
     });
   });
   //start pickadate
-  $(document).ready(function(){
   $("input").click(function(){
     $("#startDate").pickadate();
     $("#endDate").pickadate();
   });
-});
-
-  
 });
