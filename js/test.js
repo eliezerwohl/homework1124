@@ -1,4 +1,5 @@
 $("document").ready(function(){
+  $(".fakeInvisible").hide();
   $(".startSearch").click(function() {
   $(".fakeInvisible").slideDown(1000,function(){
     $(".startSearch").hide();
@@ -12,4 +13,9 @@ $("document").ready(function(){
     $("#startDate").pickadate();
     $("#endDate").pickadate();
   });
+
+  /*
+  $("input").mouseenter(function(){
+    alert("hi");
+  })*/
 });
