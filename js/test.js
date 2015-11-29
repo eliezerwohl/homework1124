@@ -5,8 +5,15 @@ $("document").ready(function(){
     $("#myCarousel").animate({
       height:'350px'})
     .slideUp(9000000);
+    });
   });
-  
+  //start pickadate
+  $(document).ready(function(){
+  $("input").click(function(){
+    $("#startDate").pickadate();
+    $("#endDate").pickadate();
   });
+});
 
+  
 });
