@@ -1,6 +1,6 @@
 $("Document").ready(function() {
   $(".resetSearch").hide();
-  $(".searchButton").on("click", function() {   
+  $("#stateSearch").keypress(function() {   
     var stateSearch, searchButton, nj, acceptNJ, acceptNY, acceptPA, pa, endEmpty, startEmpty, stateEmpty
     // dictionary
     acceptNJ = {
