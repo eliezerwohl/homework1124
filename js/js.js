@@ -22,23 +22,23 @@ $("Document").ready(function() {
     ny = "ny";
     pa = "pa";
     stateSearch = $("#stateSearch").val();
-    stateSearch = $("#stateSearch").val();
     endEmpty= $("#endDate").val();
     startEmpty= $("#startDate").val();
 
     if (endEmpty.length === 0) {
-      prompt("needs ending");
+       $(".notValid").show();
       return;     
-      };
+      }
 
-    if (startEmpty.length === 0) {
-        prompt("needs start");
+    if (startEmpty.length === 0) {     
+        alert("please enter start");
+         $(".notValid").show();
         return;
-      };
+      }
     if (stateSearch.length === 0) {
-        prompt("enter in a state");
+        $(".notValid").show();
         return;
-      };
+      }
   
     if (acceptNJ[stateSearch.toLowerCase()]) {
         $(".papanel").remove();
@@ -50,8 +50,10 @@ $("Document").ready(function() {
         $(".target").prepend("<div class='panel panel-info njpanel 1star nothing 2dollar'> <div class='panel panel-body'>101 dollar1 star nj</div></div>");
         $('.searchButton').hide();
         $(".resetSearch").show();
+        $(".notValid").hide();
+        $(".validTri").hide();
         return;
-      };
+      }
     if (acceptNY[stateSearch.toLowerCase()]) {
         $(".njpanel").remove();
         $(".papanel").remove();
@@ -62,8 +64,10 @@ $("Document").ready(function() {
         $(".target").prepend("<div class='panel panel-info nypanel 1star 3dollar hbo'> <div class='panel panel-body '> 246 dollar 1 star ny hbo</div></div>");
         $('.searchButton').hide();
         $(".resetSearch").show();
+        $(".notValid").hide();
+        $(".validTri").hide();
         return; 
-      };
+      }
     if (acceptPA[stateSearch.toLowerCase()]) {
         $(".njpanel").remove();
         $(".nypanel").remove();
@@ -74,11 +78,15 @@ $("Document").ready(function() {
         $(".target").prepend("<div class='panel panel-info papanel 1star wifi'> <div class='panel panel-body 2dollar'>130 dollar 1 star pa wifi</div></div>");
         $('.searchButton').hide();
         $(".resetSearch").show();
+        $(".notValid").hide();
+        $(".validTri").hide();
         return;
         }
 
       else {
-        prompt("please enter a valid tri-state!");
+        $(".notValid").hide();
+        $(".validTri").show();
+        return;
           }
   });
 });

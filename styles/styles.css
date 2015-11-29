@@ -6,6 +6,8 @@
   z-index: 20;
 }
 
+.notValid, #bitcoin, .validTri {display:none;}
+
 .carousel .item {
   height: 500px;
   background-color: #777;
