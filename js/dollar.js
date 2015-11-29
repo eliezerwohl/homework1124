@@ -27,7 +27,4 @@ $("Document").ready(function() {
     $(".2dollar:visible").show();
     return;
   });
-  $(".threefiddy").on("click", function() {
-    prompt("get out of here you loch ness monster, you ain't fooling no one");
-  });
 });
