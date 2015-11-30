@@ -71,11 +71,11 @@ $("Document").ready(function() {
     if (acceptPA[stateSearch.toLowerCase()]) {
         $(".njpanel").remove();
         $(".nypanel").remove();
-        $(".target").prepend("<div class='panel panel-info papanel 5star wifi 4dollar'> <div class='panel panel-body'>This Hotel<button type='button' class='btn btn-primary' data-toggle='modal' data-target='.paModal5'>More Information</button></div></div>");
-        $(".target").prepend("<div class='panel panel-info papanel 4star wifi 4dollar'> <div class='panel panel-body'>That hotel<button type='button' class='btn btn-primary' data-toggle='modal' data-target='.paModal4'>More Information</button></div></div>");
-        $(".target").prepend("<div class='panel panel-info papanel 3star hbo  3dollar'> <div class='panel panel-body'>Matt Hotel <button type='button' class='btn btn-primary' data-toggle='modal' data-target='.paModal3'>More Information</button></div></div>");
-        $(".target").prepend("<div class='panel panel-info papanel 2star wifi 2dollar'> <div class='panel panel-body'>Gat Hotel<button type='button' class='btn btn-primary' data-toggle='modal' data-target='.paModal2'>More Information</button></div></div>");
-        $(".target").prepend("<div class='panel panel-info papanel 1star wifi 2dollar'> <div class='panel panel-body'>fat hotel<button type='button' class='btn btn-primary' data-toggle='modal' data-target='.paModal1'>More Information</button></div></div>");
+        $(".target").prepend("<div class='panel panel-info papanel pa5 5star wifi 4dollar'> <div class='panel panel-body'>This Hotel<button type='button' class='btn btn-primary' data-toggle='modal' data-target='.paModal5'>More Information</button></div></div>");
+        $(".target").prepend("<div class='panel panel-info papanel pa4 4star wifi 4dollar'> <div class='panel panel-body'>That hotel<button type='button' class='btn btn-primary' data-toggle='modal' data-target='.paModal4'>More Information</button></div></div>");
+        $(".target").prepend("<div class='panel panel-info papanel pa3 3star hbo  3dollar'> <div class='panel panel-body'>Matt Hotel <button type='button' class='btn btn-primary' data-toggle='modal' data-target='.paModal3'>More Information</button></div></div>");
+        $(".target").prepend("<div class='panel panel-info papanel pa2 2star wifi 2dollar'> <div class='panel panel-body'>Gat Hotel<button type='button' class='btn btn-primary' data-toggle='modal' data-target='.paModal2'>More Information</button></div></div>");
+        $(".target").prepend("<div class='panel panel-info papanel pa1 1star wifi 2dollar'> <div class='panel panel-body'>fat hotel<button type='button' class='btn btn-primary' data-toggle='modal' data-target='.paModal1'>More Information</button></div></div>");
         $('.searchButton').hide();
         $(".resetSearch").show();
         $(".notValid").hide();
