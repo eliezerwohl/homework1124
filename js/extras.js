@@ -1,5 +1,4 @@
 $("Document").ready(function() {
-
   $(".bitcoin").on("click", function(){
     $("#bitcoin").show();
     $(".hbo, .wifi, .nothing").hide();
