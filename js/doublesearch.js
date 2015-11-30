@@ -5,5 +5,6 @@ $("Document").ready(function() {
       $(".resetSearch").hide();
       $(".target").empty();
       $( "#stateSearch" ).val('');
+       $('.attButton').attr('disabled', 'disabled');
   });
 });

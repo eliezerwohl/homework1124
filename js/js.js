@@ -1,6 +1,7 @@
 $("Document").ready(function() {
+  $('.attButton').attr('disabled', 'disabled');
   $(".resetSearch").hide();
-  $("#stateSearch").keypress(function() {   
+  $("#stateSearch").keypress(function() {  
     var stateSearch, searchButton, nj, acceptNJ, acceptNY, acceptPA, pa, endEmpty, startEmpty, stateEmpty
     // dictionary
     acceptNJ = {
@@ -12,7 +13,6 @@ $("Document").ready(function() {
         "ny" : true,
         "new york" : true
     };
-
     acceptPA = {
         "pa" : true,
         "pennsylvania" : true
@@ -24,7 +24,6 @@ $("Document").ready(function() {
     stateSearch = $("#stateSearch").val();
     endEmpty= $("#endDate").val();
     startEmpty= $("#startDate").val();
-
 
     if (endEmpty.length === 0) {
        $(".notValid").show();
@@ -53,6 +52,7 @@ $("Document").ready(function() {
         $(".resetSearch").show();
         $(".notValid").hide();
         $(".validTri").hide();
+        $('.attButton').removeAttr('disabled');
         return;
       }
     if (acceptNY[stateSearch.toLowerCase()]) {
@@ -67,6 +67,7 @@ $("Document").ready(function() {
         $(".resetSearch").show();
         $(".notValid").hide();
         $(".validTri").hide();
+        $('.attButton').removeAttr('disabled');
         return; 
       }
     if (acceptPA[stateSearch.toLowerCase()]) {
@@ -81,6 +82,7 @@ $("Document").ready(function() {
         $(".resetSearch").show();
         $(".notValid").hide();
         $(".validTri").hide();
+        $('.attButton').removeAttr('disabled');
         return;
         }
 
