@@ -87,7 +87,6 @@ $("Document").ready(function() {
         }
 
       else {
-        $(".notValid").hide();
         $(".validTri").show();
         return;
           }
