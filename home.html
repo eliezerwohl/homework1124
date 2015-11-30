@@ -65,24 +65,25 @@
   </div><!-- End Carousel --> 
   <!-- Begin Navbar -->
   <div class="navbar navbar-default fakeInvisible">
-    <div class="container">
-      <div class="col-md-4">
+    <div class="container-fluid">
+      <div class="col-md-3">
         <input type="text" class="form-control" id="startDate" placeholder="Start Date">
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <input type="text" class="form-control" id="endDate" placeholder="End Date">
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <input type="text" class="form-control" id="stateSearch" placeholder="nj ny or pa">
       </div>
+      <div class="col-md-3">
       <button type="button" class="btn btn-warning resetSearch"> reset search
-      </button>
+      </button> </div>
     </div>
   </div> <!-- end navbar --> 
   <main class="fakeInvisible">
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="col-md-4">
+        <div class="col-md-5">
           <div class="panel panel-default">
             <div class="panel-body">
               <div class ="btn-group">
@@ -120,6 +121,7 @@
                 <button type="button" class="btn btn-default hboselect"> HBO</button>
                 <button type="button" class="btn btn-default bitcoin"> accepts bitcoin</button>
                 <button type="button" class="btn btn-default wifiselect">Wifi </button>
+                <button type="button" class="btn btn-alert reset"> reset Amenities </button>
               </div>
             </div>  <!-- panel body -->
           </div>  <!-- panel default -->
@@ -130,16 +132,12 @@
                 <button type="button" class="btn btn-success button 400dol">300-400 dollars</button>
                 <button type="button" class="btn btn-success button 300dol">200-300 dollars </button>
                 <button type="button" class="btn btn-success button 200dol">100-200 dollars </button>
+                <button type="button" class="btn btn-alert reset"> reset $</button>
               </div> <!-- btn group -->
             </div>  <!-- panel body -->
           </div> <!-- panel default -->
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <button type="button" class="btn btn-alert reset"> RESET options </button>
-            </div>
-          </div>
         </div> <!-- col md 4 -->
-        <div class = "col-md-8 target">  <!-- information about hotels is below and hidden -->
+        <div class = "col-md-7 target">  <!-- information about hotels is below and hidden -->
         <div class="notValid">Please enter all fields before searching </div>
         <div id="bitcoin">Nobody Accepts Bitcoin </div>
         <div class="validTri">Please enter a valid Tri-State </div>
