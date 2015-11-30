@@ -1,3 +1,3 @@
-$("document").ready(function(){
-  $(".fakeInvisible").hide();
-});
+// $("document").ready(function(){
+//   $(".fakeInvisible").hide();
+// });
