@@ -9,12 +9,12 @@
 <link rel="stylesheet" type="text/css" href="styles/styles.css">
 <link rel="stylesheet" type="text/css" href="styles/default.css">
 <link rel="stylesheet" type="text/css" href="styles/default.date.css">
-<link rel="stylesheet" type="text/css" href="rtl.css">
 <title>Tri State Hotels</title>
 </head>
 <body>
 <!--<section class="container"> -->
 <!-- Start Carousel -->
+<div class="col-xs-12">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -39,7 +39,7 @@
         <div class="container">
           <div class="carousel-caption">
             <h1>Experience PA!</h1>
-            <p><a class="btn btn-lg btn-primary startSearch" id="modal" role="button">Click Here to start your search</a></p>
+            <p><a class="btn btn-lg btn-primary startSearch" id="modal" role="button">Start Your Search</a></p>
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@
         <div class="container">
           <div class="carousel-caption">
             <h1>Stay in New Jersey</h1>
-            <p><a class="btn btn-lg btn-primary startSearch" id="modal" role="button">Search for a place to stay</a></p>
+            <p><a class="btn btn-lg btn-primary startSearch" id="modal" role="button">Search For a Place</a></p>
           </div>
         </div>
       </div>
@@ -63,55 +63,62 @@
       <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
   </div><!-- End Carousel --> 
+  </div>
   <!-- Begin Navbar -->
+  <div class="col-xs-12">
   <div class="navbar navbar-default fakeInvisible">
     <div class="container-fluid">
-      <div class="col-md-3">
+      <div class="col-xs-3">
         <input type="text" class="form-control" id="startDate" placeholder="Start Date">
       </div>
-      <div class="col-md-3">
+      <div class="col-xs-3">
         <input type="text" class="form-control" id="endDate" placeholder="End Date">
       </div>
-      <div class="col-md-3">
+      <div class="col-xs-3">
         <input type="text" class="form-control" id="stateSearch" placeholder="nj ny or pa">
       </div>
-      <div class="col-md-3">
+      <div class="col-xs-3">
       <button type="button" class="btn btn-warning resetSearch"> reset search
       </button> </div>
     </div>
   </div> <!-- end navbar --> 
+  </div>
   <main class="fakeInvisible">
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="col-md-5">
+        <div class="col-xs-5">
           <div class="panel panel-default">
             <div class="panel-body">
               <div class ="btn-group">
-                <button type="button" class="btn attButton btn-info button 1input">
+              <div class="star">
+              <ul>
+                <li><button type="button" class="btn attButton btn-info button 1input">
                   <span class="glyphicon glyphicon-star"></span>
-                </button>
-                <button type="button" class="btn attButton btn-info button 2input"> 
-                  <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </button>
-                <button type="button" class="btn attButton btn-info button 3input">
+                </button></li>
+                <li><button type="button" class="btn attButton btn-info button 2input"> 
                   <span class="glyphicon glyphicon-star"></span>
                   <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </button>
-                <button type="button" class="btn attButton btn-info button 4input"> 
+                </button></li>
+                <li><button type="button" class="btn attButton btn-info button 3input">
                   <span class="glyphicon glyphicon-star"></span>
                   <span class="glyphicon glyphicon-star"></span>
                   <span class="glyphicon glyphicon-star"></span>
-                  <span class="glyphicon glyphicon-star"></span>
-                </button>
-                <button type="button" class="btn attButton btn-info button 5input">
+                </button></li>
+               <li><button type="button" class="btn attButton btn-info button 4input"> 
                   <span class="glyphicon glyphicon-star"></span>
                   <span class="glyphicon glyphicon-star"></span>
                   <span class="glyphicon glyphicon-star"></span>
                   <span class="glyphicon glyphicon-star"></span>
+                </button></li>
+                <li><button type="button" class="btn attButton btn-info button 5input">
                   <span class="glyphicon glyphicon-star"></span>
-                </button>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                  <span class="glyphicon glyphicon-star"></span>
+                </button></li>
+                </ul>
+                </div>
               </div> <!-- btn group -->
             </div> <!-- panel body -->
           </div> <!-- pane default -->
@@ -140,7 +147,7 @@
               </div>
             </div>
         </div> <!-- col md 4 -->
-        <div class = "col-md-7 target">  <!-- information about hotels is below and hidden -->
+        <div class = "col-xs-7 target">  <!-- information about hotels is below and hidden -->
         <div class="notValid">Please enter all fields before searching </div>
         <div id="bitcoin">Nobody Accepts Bitcoin </div>
         <div class="validTri">Please enter a valid Tri-State </div>
@@ -386,7 +393,6 @@
 <script type="text/javascript" src="js/date/picker.js"></script>
 <script type="text/javascript" src="js/date/picker.date.js"></script>
 <script type="text/javascript" src="js/date/picker.time.js"></script>
-<script type="text/javascript" src="js/date.js"></script>
 <script type="text/javascript" src="js/js.js"></script>
 <script type="text/javascript" src="js/startup.js"></script>
 <script type="text/javascript" src="js/extras.js"></script>
