@@ -1,3 +1,11 @@
+html {
+  background-color: black;
+
+}
+
+
+
+
 .navbar {
   position: relative;
   top: 0;
@@ -27,5 +35,24 @@
 
  
 }
+
+.target{
+  position: ;
+  float: right;
+  display: inline-block;
+  left: auto;
+  top: 42%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.star {
+  position: relative;
+  left: -38px;
+}
+
+
 
 
